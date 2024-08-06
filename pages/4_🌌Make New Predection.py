@@ -48,7 +48,6 @@ for key in ["Age_In_Years", "Bilirubin", "Cholesterol", "Albumin", "Copper", "Al
 
 def get_data_from_user():
     col1, col2, col3, col4 = st.columns(4)
-    col1, col2, col3, col4 = st.columns(4)
     with col1:
         Age_In_Years = st.number_input("Age", value=int(st.session_state.Age_In_Years), step=1, format="%d",placeholder="Patient Age",)
         Bilirubin = st.number_input("Bilirubin", value=float(st.session_state.Bilirubin), step=1.0, format="%.2f", placeholder="Patient Bilirubin",)
@@ -386,7 +385,7 @@ def get_data_from_user2():
 if __name__ == "__main__":
     logo_path = "./TheLogo2.png"  # Replace with the path to your logo image
     st.sidebar.image(logo_path, use_column_width=True)
-    get_data_from_user2()
+    get_data_from_user()
     # get_data_from_user()
 
    
