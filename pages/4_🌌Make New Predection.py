@@ -250,17 +250,17 @@ def get_data_from_user2():
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         Age_In_Years = st.number_input("Age", value=None, placeholder="Patient Age", step=1)
-        Bilirubin = st.number_input("Bilirubin", value=None, placeholder="Patient Bilirubin", step=1)
-        Cholesterol = st.number_input("Cholesterol", value=None, placeholder="Patient Cholesterol", step=1)
-        Prothrombin = st.number_input("Prothrombin", value=None, placeholder="Patient Prothrombin", step=1)
+        Bilirubin = st.number_input("Bilirubin", value=None, placeholder="Patient Bilirubin",  format="%.2f",step=1)
+        Cholesterol = st.number_input("Cholesterol", value=None, placeholder="Patient Cholesterol",  format="%.2f",step=1)
+        Prothrombin = st.number_input("Prothrombin", value=None, placeholder="Patient Prothrombin",  format="%.2f",step=1)
     with col2:
-        Albumin = st.number_input("Albumin", value=None, placeholder="Patient Albumin", step=1)
-        Copper = st.number_input("Copper", value=None, placeholder="Patient Copper", step=1)
-        Alk_Phos = st.number_input("Alk_Phos", value=None, placeholder="Patient Alk_Phos", step=1)
+        Albumin = st.number_input("Albumin", value=None, placeholder="Patient Albumin",  format="%.2f",step=1)
+        Copper = st.number_input("Copper", value=None, placeholder="Patient Copper",  format="%.2f",step=1)
+        Alk_Phos = st.number_input("Alk_Phos", value=None, placeholder="Patient Alk_Phos",  format="%.2f",step=1)
     with col3:
-        SGOT = st.number_input("SGOT", value=None, placeholder="Patient SGOT", step=1)
-        Tryglicerides = st.number_input("Tryglicerides", value=None, placeholder="Patient Tryglicerides", step=1)
-        Platelets = st.number_input("Platelets", value=None, placeholder="Patient Platelets", step=1)
+        SGOT = st.number_input("SGOT", value=None, placeholder="Patient SGOT", format="%.2f", step=1)
+        Tryglicerides = st.number_input("Tryglicerides", value=None, placeholder="Patient Tryglicerides",  format="%.2f",step=1)
+        Platelets = st.number_input("Platelets", value=None, placeholder="Patient Platelets",  format="%.2f",step=1)
 
     calualte = st.button("Predict Patient Outcome")
     if calualte:
